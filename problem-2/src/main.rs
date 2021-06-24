@@ -1,22 +1,14 @@
 fn main() {
-    //fib seq vars
-    let mut prev = 1;
-    let mut curr = 2;
-    let mut next = 0;
-    let mut sum = 2;
+    let mut v = vec![1, 2];
+    let mut sum: u32 = 0;
 
-    while next < 4000000 {
-        if next % 2 == 0 {
-            sum += next;
-            println!("Sum is now {0}, next in sequence is now {1}", sum, next);
+
+    while v[1] < 4000000 {
+        if v[1] % 2 == 0 {
+            sum += v[1];
+            println!("{0}", sum)
         }
-        else {
-            println!("no change to sum");
-        }
-        next = curr + prev;
-        prev = curr;
-        curr = next;
-
-
+        v.push(v[0]+v[1]);
+        v.remove(0);
     }
 }
