@@ -1,19 +1,20 @@
-use std::f64;
 fn main () {
-    let n = 600851475143;
-    let maxval = 600851475143.sqrt();
+    let mut n = 600851475143_u64;
+    let maxval = 600851475143_f64.sqrt();
 
     while n % 2 == 0 {
         println!("2");
         n /= 2;
     }
 
-    for i in 3..maxval {
+    for i in 3..maxval as u64 {
         
         while n % i == 0 {
-            println!("{0}", i);
+            println!("{}", i);
             n /= i;
         }
-
+    }
+    if n > 2 {
+        println!("{}", n);
     }
 }
