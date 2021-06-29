@@ -1,6 +1,6 @@
-fn primedrive (n,maxval: u32,u32) -> u32 {
-    let mut n = 50_u64;
-    let maxval = 50_f64.sqrt();
+fn primedrive (n: u32, maxval: u32) -> u32 {
+    let mut n = 20_u64;
+    let maxval = 20_f64.sqrt();
 
     while n % 2 == 0 {
         println!("2");
@@ -19,11 +19,6 @@ fn primedrive (n,maxval: u32,u32) -> u32 {
     }
 }
 
-fn is_palnindrome(num: u32) -> bool {
-    return num.to_string() == num.to_string().chars().rev().collect::<String>();
-    //shouts out to dnaka91 for the help :)
-}
-
 fn main() {
-NEWS
+    primedrive(n: u32, maxval: u32);
 }
