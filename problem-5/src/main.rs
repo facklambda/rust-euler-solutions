@@ -1,23 +1,20 @@
 fn main() {
-    let mut i = 20;
-    // let n = [1,2,3,4,5,6,7,8,9,10];
-    // let mut iter = n.iter().map(|);
+    let mut n: u32 = 0;
 
-fn borrowing_u64(borrowind_u64: &u64)
-    // while i % iter.next() != 0 {
-    //     
-    //let inclosure = |p| p + 1;
-    let closure = |n: u64| i % n != 0;
-    for n in 1..=20 {
-        closure;
-        ib_u64(&i) += 20;
+    for i in 1..=20 {
+        while divvy_func(n, i) == false {
+            n += 20;
+            println!("n is: {}", n)
+        }
+        println!("i is: {}", i)
+        i += 1;
     }
 }
 
-fn while_states(n: u64) -> {
-    // procgen code that just does this i % n != 0 thru max val
-    let stater = 
+fn divvy_func(x: u32, y: u32) -> bool {
+    x % y != 0
 }
-
-
-I'M STUCK LOL
+// 232792560
+// 90716300
+// 90716300
+// 234317780
