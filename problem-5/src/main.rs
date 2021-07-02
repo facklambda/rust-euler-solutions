@@ -20,7 +20,8 @@ fn main() {
         || i % 19 != 0
         || i % 20 != 0
     {
-        println!("lol, {}", i);
         i += 20;
     }
+    println!("{}",i);
+    assert!(i == 232792560);
 }
